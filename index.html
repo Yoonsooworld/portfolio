@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>윤수의 포트폴리오</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1><a href="#"><img src="images/logo.jpg" alt="YoonSoo"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">About Me</a>
+                        <ul class="submenu">
+                            <li><a href="file:///Users/3-1T/Desktop/%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9%202/index.html#">Profile</a></li>
+                            <li><a href="#">My skill</a></li>
+                            <li><a href="#">School</a></li>
+                            <li><a href="#">Contact</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="#">Design</a>
+                        <ul class="submenu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Visual</a></li>
+                            <li><a href="#">Graphic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Video</a>
+                        <ul class="submenu">
+                            <li><a href="#">advertisement</a></li>
+                            <li><a href="#">self-introduction</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">My Channel</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.instagram.com/yoonsu_1104/">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UC_ZW0bhBiCWDMBC4GLLrCzg?view_as=subscriber">Youtube</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            </header>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg"> 
+                    
+                    <img src="images/banner%2001.jpg" alt="이미지 부가 설명">
+                </div>
+                <div class="slideImg">
+                    
+                    <img src="images/banner%2002.jpg" alt="이미지 부가 설명">
+                </div>
+                <div class="slideImg">
+                   
+                    <img src="images/banner%2003.jpg" alt="이미지 부가 설명">
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <!-- banner -->
+        <section id="contents" class="clearfix">
+            <div class="banner2"><img src="images/contents%2001.jpg" alt="명언"></div>
+            <div class="banner3"><img src="images/contents%2002.jpg" alt="명언"></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- contents -->
+            <section id="mockup" class="clearfix">
+                <div class="cont1">
+                <div class="best clearfix">
+                    <figure>
+                        <img src="images/01.jpg" alt="01">
+                        <figcaption>뉴트로 델몬트</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/02.jpg" alt="02">
+                        <figcaption>방과후 교실</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/03.jpg" alt="03">
+                        <figcaption>박카스 광고</figcaption>
+                    </figure>
+                    
+                
+                    </div>
+                    
+                    <div class="best clearfix">
+                    <figure>
+                        <img src="images/04.jpg" alt="04">
+                        <figcaption>광고 영상</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/05.jpg" alt="05">
+                        <figcaption>로고</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/06.jpg" alt="06">
+                        <figcaption>카드뉴스</figcaption>
+                    </figure>
+                    
+                
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+            
+        </section>
+        
+        
+        <!-- contents -->
+        
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/flogo.jpg" alt="로고"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>
+                <address>
+                    한강미디어고(주) 디자이너 : 최윤수<br>
+                    주소 : 서울특별시 영등포구 양평로22나길 5-1 사업자등록번호 : 911-01-59513<br>
+                    광고영상판매업 서울특별시 영등포구 양평동4가 선유로55길 22 개인정보취급방침
+                </address>
+            
+            
+            
+            
+            
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        });
+        
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+    </script>
+        
+    
+    </body>
+
+</html>
